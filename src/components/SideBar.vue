@@ -4,13 +4,13 @@
             <div class="dp">
                 <img src='../assets/profile.png'>
             </div>
-            <a href="#about">ABOUT</a>
-            <a href="#"> <strong> EXPERIENCE </strong> </a>
-            <a href="#"> <strong> EDUCATION </strong> </a>
-            <a href="#"> <strong> SKILLS </strong> </a>
-            <a href="#"> <strong> INTEREST </strong> </a>
-            <a href="#"> <strong> CONTACTS </strong> </a>
-        </div>
+                <a href="#about">ABOUT</a>
+                <a href="#experience"> <strong> EXPERIENCE </strong> </a>
+                <a href="#education"> <strong> EDUCATION </strong> </a>
+                <a href="#skills"> <strong> SKILLS </strong> </a>
+                <a href="#interests"> <strong> INTERESTS </strong> </a>
+                <a href="#contacts"> <strong> CONTACTS </strong> </a>
+            </div>
     </div>
 </template>
  
@@ -30,12 +30,15 @@ export default {
 <style scoped>
 .sidebar-content{
     background-color: #040707d7;
-    height: 100%;
+    height: 100vh;
     text-align: center;
-    position: absolute;
+    position: fixed;
+    left: 5px;
+    top: 5px;
     padding-top: 15%;
-    padding-left:25%;
-    padding-right: 25%;
+    padding-left:5%;
+    padding-right: 5%;
+    overflow: hidden;
 }
 .sidebar-content a{
     text-decoration: none;
