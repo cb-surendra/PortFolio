@@ -46,10 +46,12 @@ export default {
     display: block;
     color: #f0f0e6d7;
     font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* transform: translateY(-50%); */
 }
 .sidebar-content a:hover{
     color: #ff8a80;
+    font-size: 160%;
 }
 img{
    height: 200px;
