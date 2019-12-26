@@ -29,13 +29,13 @@ export default {
 </script>
 <style scoped>
 .sidebar-content{
-    background-color: #040707d7;
+    background-color: #1E2810;
     height: 100vh;
     text-align: center;
     position: fixed;
-    left: 5px;
-    top: 5px;
-    padding-top: 15%;
+    left: 0px;
+    top: 0px;
+    padding-top: 5%;
     padding-left:5%;
     padding-right: 5%;
     overflow: hidden;
@@ -56,6 +56,7 @@ img{
    width: 200px;
    background-color: white;
    border-radius: 50%;
-   margin-bottom: 25%;
+   border: 6px solid white;
+   margin-bottom: 20%;
 }
 </style>

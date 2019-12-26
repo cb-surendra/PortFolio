@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <SideBar/>
-    <div>
+    <div class="links">
       <About id="about" />
       <Experience id="experience" />
       <Education id="education" />
@@ -41,4 +41,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.links{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
 </style>
