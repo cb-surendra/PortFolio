@@ -1,14 +1,22 @@
 <template>
   <div class="home">
-    <SideBar/>
-    <div class="links">
-      <About id="about" />
-      <Experience id="experience" />
-      <Education id="education" />
-      <Skills id="skills" />
-      <Interest id="interests"/>
-      <Contacts id="contacts"/>
-    </div>
+    <b-row>
+      <b-col sm="3">
+        <SideBar/>
+      </b-col>
+      <b-col class="links" sm="9">
+        <div>
+          <About id="about" />
+          <Experience id="experience" />
+          <Education id="education" />
+          <Skills id="skills" />
+          <Interest id="interests"/>
+          <Contacts id="contacts"/>
+        </div>
+      </b-col>
+    </b-row>
+    
+    
   </div>
 </template>
 
@@ -42,8 +50,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .links{
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  margin-top: 50px;
 }
 </style>

@@ -4,12 +4,12 @@
             <div class="dp">
                 <img src='../assets/profile.png'>
             </div>
-                <a href="#about">ABOUT</a>
-                <a href="#experience"> <strong> EXPERIENCE </strong> </a>
-                <a href="#education"> <strong> EDUCATION </strong> </a>
-                <a href="#skills"> <strong> SKILLS </strong> </a>
-                <a href="#interests"> <strong> INTERESTS </strong> </a>
-                <a href="#contacts"> <strong> CONTACTS </strong> </a>
+            <a href="#about">ABOUT</a>
+            <a href="#experience"> <strong> EXPERIENCE </strong> </a>
+            <a href="#education"> <strong> EDUCATION </strong> </a>
+            <a href="#skills"> <strong> SKILLS </strong> </a>
+            <a href="#interests"> <strong> INTERESTS </strong> </a>
+            <a href="#contacts"> <strong> CONTACTS </strong> </a>
             </div>
     </div>
 </template>
@@ -22,7 +22,6 @@ export default {
   name: 'Index',
   data(){
     return {
-        profile
     }
   }
 };
