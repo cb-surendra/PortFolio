@@ -59,5 +59,6 @@ img{
    border-radius: 50%;
    border: 6px solid white;
    margin-bottom: 20%;
+   margin-top: 10%;
 }
 </style>

@@ -2,58 +2,13 @@
     <div id="contacts">
         <section class="resume-section">
             <div class="resume-item-head">
-                <h1>Education</h1>
+                <h1>Contacts</h1>
             </div>
-            <div class="resume-item">
-                <div class="schooling">
-                    <div class="row">
-                        <div class="col">
-                            <h3>JNV Hoshangabad</h3>
-                            <h4>Schooling 6th - 12th</h4>
-                        </div>
-                        <div class="col">
-                        </div>
-                        <div class="col">  
-                            <h6> <i>July 2006 - April 2013</i> </h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="grad">
-                    <div class="row">
-                        <div class="col">
-                            <h3>IIIT, Allahabad</h3>
-                            <h4>Bachelor of Technology</h4>
-                            <br>
-                            <div class="desc">
-                                <h6>Information Technology</h6>
-                                <h6>CGPA : 7.94</h6>
-                            </div>
-                        </div>
-                        <div class="col">
-                        </div>
-                        <div class="col">  
-                            <h6> <i>July 2014 - may 2019</i> </h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="postgrad">
-                    <div class="row">
-                        <div class="col">
-                            <h3>IIIT, Allahabad</h3>
-                            <h4>Master of Technology</h4>
-                            <br>
-                            <div class="desc">
-                                <h6>Information Technology</h6>
-                                <h6>CGPA : 7.94</h6>
-                            </div>
-                        </div>
-                        <div class="col">
-                        </div>
-                        <div class="col">  
-                            <h6> <i>July 2014 - May 2019</i> </h6>
-                        </div>
-                    </div>
-                </div>
+            <div class="icons">
+                <v-icon name="beer"/>
+                <v-icon name="phone"/>
+                <v-icon name="user"/>
+                <v-icon name="car"/>
             </div>
         </section>
     </div>    
@@ -66,6 +21,10 @@ export default {
 </script>
 
 <style scoped>
+v-icon{
+    width: 100%;
+    height: 100%;
+}
 #contacts{
     height: 100vh;
 }
