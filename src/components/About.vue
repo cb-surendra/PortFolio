@@ -1,112 +1,115 @@
 <template>
-    <div id = "about">
+    <div id="education">
         <section class="resume-section">
-            <div class="resume-item-head">
-                <h1>Education</h1>
-            </div>
             <div class="resume-item">
-                <div class="schooling">
-                    <div class="row">
-                        <div class="col">
-                            <h3>JNV Hoshangabad</h3>
-                            <h4>Schooling 6th - 12th</h4>
-                        </div>
-                        <div class="col">
-                        </div>
-                        <div class="col">  
-                            <h6> <i>July 2006 - April 2013</i> </h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="grad">
-                    <div class="row">
-                        <div class="col">
-                            <h3>IIIT, Allahabad</h3>
-                            <h4>Bachelor of Technology</h4>
-                            <br>
-                            <div class="desc">
-                                <h6>Information Technology</h6>
-                                <h6>CGPA : 7.94</h6>
-                            </div>
-                        </div>
-                        <div class="col">
-                        </div>
-                        <div class="col">  
-                            <h6> <i>July 2014 - may 2019</i> </h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="postgrad">
-                    <div class="row">
-                        <div class="col">
-                            <h3>IIIT, Allahabad</h3>
-                            <h4>Master of Technology</h4>
-                            <br>
-                            <div class="desc">
-                                <h6>Information Technology</h6>
-                                <h6>CGPA : 7.94</h6>
-                            </div>
-                        </div>
-                        <div class="col">
-                        </div>
-                        <div class="col">  
-                            <h6> <i>July 2014 - May 2019</i> </h6>
-                        </div>
-                    </div>
-                </div>
+                <mdb-container class="about">
+                    <mdb-row>
+                        <mdb-col sm="12">
+                            <mdb-card dark>
+                                <mdb-view class="image_pro" hover>
+                                    <a href="#!">
+                                        <img style="width:862px; height:380px;" src='../assets/profile_2.jpg'>
+                                        <mdb-mask flex-center waves overlay="white-slight"></mdb-mask>
+                                    </a>
+                                </mdb-view>
+                                <mdb-card-body color="elegant" class="white-text">
+                                    <a class="activator mr-4"><mdb-icon icon="share-alt" /></a>
+                                    <mdb-card-title>About Me !</mdb-card-title>
+                                    <hr class="hr-light"/>
+                                    <p class="font-small mb-3">Hello!, I'm Surendra, A Software Developer in Chargebee, Chennai, India.
+                                        I love to build the web apps through the lastest technologies. 
+                                        After graduating from IIIT Allahabad, I joined the Chargebee Pvt. Ltd. in july 2019.
+                                        
+                                        Here are the few Technologies I have been working on.
+                                    </p>
+                                    <div class="row">
+                                        <div class="col">
+                                            <mdb-icon style="color: rgb(39, 228, 15);" icon="caret-right" /> Java
+                                        </div>
+                                        <div class="col">   
+                                            <mdb-icon icon="caret-right" style="color: rgb(39, 228, 15);"/> HTML & CSS
+                                        </div>
+                                        <div class="col">
+                                            <mdb-icon icon="caret-right" style="color: rgb(39, 228, 15);"/> JavaScript
+                                        </div>
+                                        <div class="col">
+                                            <mdb-icon icon="caret-right" style="color: rgb(39, 228, 15);"/> Python
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <mdb-icon icon="caret-right" style="color: rgb(39, 228, 15);"/> C++
+                                        </div>
+                                        <div class="col">
+                                            <mdb-icon icon="caret-right" style="color: rgb(39, 228, 15);"/> Vue
+                                        </div>
+                                        <div class="col">
+                                            <mdb-icon icon="caret-right" style="color: rgb(39, 228, 15);"/> Node.js
+                                        </div>
+                                        <div class="col">   
+                                            <mdb-icon icon="caret-right" style="color: rgb(39, 228, 15);"/> Django
+                                        </div>
+                                    </div>
+                                </mdb-card-body>
+                            </mdb-card>
+                        </mdb-col>
+                    </mdb-row>
+                </mdb-container>
             </div>
         </section>
-    </div>    
+    </div>
+	
 </template>
-
 <script>
-export default {
-    
-}
+	import { mdbContainer, mdbRow, mdbCol, mdbCard, mdbCardImage, mdbCardHeader, mdbCardBody, mdbCardTitle, mdbCardText, mdbCardFooter, mdbCardUp, mdbCardAvatar, mdbCardGroup, mdbBtn, mdbView, mdbMask, mdbIcon } from 'mdbvue';
+	export default {
+		name: 'CardProPage',
+		components: {
+			mdbContainer,
+			mdbRow,
+			mdbCol,
+			mdbCard,
+			mdbCardImage,
+			mdbCardHeader,
+			mdbCardBody,
+			mdbCardTitle,
+			mdbCardText,
+			mdbCardFooter,
+			mdbCardUp,
+			mdbCardAvatar,
+			mdbCardGroup,
+			mdbBtn,
+			mdbView,
+			mdbMask,
+			mdbIcon
+		}
+	}
 </script>
 <style scoped>
-#about{
+  
+.about{
+    margin-top: 10%;
+}
+.row{
+    width: 100%;
+}
+.image_pro{
+    margin-left: auto;
+    margin-right: auto;
+}
+.activator{
+    float: right;
+}
+#education{
     height: 100vh;
 }
 .resume-section{
     display: block;
-    /* margin-top: 20%; */
+    margin-top: 20%;
     margin-bottom: 20%;
 }
 .resume-item{
     padding-top: 10px;
     padding-bottom: 20px;
-}
-h1, h6{
-    font-family: 'Courier New', Courier, monospace;
-}
-h1{
-    color: rgb(54, 34, 4);
-}
-h3{
-    color: rgb(27, 77, 78);
-}
-h2{
-    font-weight: 300;
-}
-h3{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-h4{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: gray;
-}
-.row{
-    padding-bottom: 30px;
-}
-.grad{
-    padding-bottom: 30px;
-}
-.postgrad{
-    padding-bottom: 30px;
-}
-.resume-section {
-    padding-top: 12rem!important;
-    padding-bottom: 12rem!important;
 }
 </style>
