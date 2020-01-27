@@ -1,72 +1,53 @@
 <template>
-    <div id="contacts">
+    <div id="education">
         <section class="resume-section">
-            <div class="resume-item-head">
-                <h1>Education</h1>
-            </div>
             <div class="resume-item">
-                <div class="schooling">
-                    <div class="row">
-                        <div class="col">
-                            <h3>JNV Hoshangabad</h3>
-                            <h4>Schooling 6th - 12th</h4>
-                        </div>
-                        <div class="col">
-                        </div>
-                        <div class="col">  
-                            <h6> <i>July 2006 - April 2013</i> </h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="grad">
-                    <div class="row">
-                        <div class="col">
-                            <h3>IIIT, Allahabad</h3>
-                            <h4>Bachelor of Technology</h4>
-                            <br>
-                            <div class="desc">
-                                <h6>Information Technology</h6>
-                                <h6>CGPA : 7.94</h6>
+                <mdb-card class="contact-item" wide>
+                    <mdb-card-body class="text-center pb-0" cascade>
+                        <mdb-card-title><strong>Surendra Pal Uikey</strong></mdb-card-title>
+                        <mdb-card-text> <mdb-icon icon="home" style="color:rgb(8, 41, 12);" size="2x"/> <br> Chennai, TamilNadu</mdb-card-text>
+                        <mdb-card-text> <mdb-icon icon="phone" style="color:rgb(58, 92, 202);" size="2x"/>+ 91 7771 854 857</mdb-card-text>
+                        <mdb-card-footer class="text-muted mt-4">
+                            <div class="contact-icons">
+                                <a style="padding:10px; color:rgb(58, 92, 202);" class="icons-sm li-ic"><mdb-icon fab icon="linkedin" size="2x"/></a>
+                                <a style="padding:10px; color:rgb(18, 176, 238);" class="icons-sm tw-ic"><mdb-icon fab icon="twitter" size="2x"/></a>
+                                <a style="padding:10px; color:rgb(7, 94, 209);" class="icons-sm fb-ic"><mdb-icon fab icon="facebook" size="2x"/></a>
                             </div>
-                        </div>
-                        <div class="col">
-                        </div>
-                        <div class="col">  
-                            <h6> <i>July 2014 - may 2019</i> </h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="postgrad">
-                    <div class="row">
-                        <div class="col">
-                            <h3>IIIT, Allahabad</h3>
-                            <h4>Master of Technology</h4>
-                            <br>
-                            <div class="desc">
-                                <h6>Information Technology</h6>
-                                <h6>CGPA : 7.94</h6>
-                            </div>
-                        </div>
-                        <div class="col">
-                        </div>
-                        <div class="col">  
-                            <h6> <i>July 2014 - May 2019</i> </h6>
-                        </div>
-                    </div>
-                </div>
+                        </mdb-card-footer>
+                    </mdb-card-body>
+                </mdb-card>
             </div>
         </section>
-    </div>    
+    </div>
 </template>
 
 <script>
-export default {
-    
-}
+	import { mdbIcon, mdbCard, mdbView, mdbMask, mdbCardImage, mdbCardTitle, mdbCardText, mdbCardFooter, mdbCardBody } from 'mdbvue';
+	export default {
+		components: {
+			mdbCard,
+            mdbView,
+            mdbIcon,
+			mdbMask,
+			mdbCardImage,
+			mdbCardTitle,
+			mdbCardText,
+			mdbCardFooter,
+			mdbCardBody
+		}
+	};
 </script>
 
 <style scoped>
-#contacts{
+.contact-icons{
+    display: inline-flex;
+    padding: 12px;
+}
+.resume-section {
+    padding-top: 12rem!important;
+    padding-bottom: 12rem!important;
+}
+#education{
     height: 100vh;
 }
 .resume-section{
@@ -77,37 +58,5 @@ export default {
 .resume-item{
     padding-top: 10px;
     padding-bottom: 20px;
-}
-h1, h6{
-    font-family: 'Courier New', Courier, monospace;
-}
-h1{
-    color: rgb(54, 34, 4);
-}
-h3{
-    color: rgb(27, 77, 78);
-}
-h2{
-    font-weight: 300;
-}
-h3{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-h4{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: gray;
-}
-.row{
-    padding-bottom: 30px;
-}
-.grad{
-    padding-bottom: 30px;
-}
-.postgrad{
-    padding-bottom: 30px;
-}
-.resume-section {
-    padding-top: 12rem!important;
-    padding-bottom: 12rem!important;
 }
 </style>

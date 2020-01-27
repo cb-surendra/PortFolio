@@ -1,56 +1,74 @@
 <template>
     <div id="skills">
-        <section class="resume-section">
-            <div class="resume-item-head">
-                <h1>Education</h1>
-            </div>
-            <div class="resume-item">
-                <div class="schooling">
-                    <div class="row">
-                        <div class="col">
-                            <h3>JNV Hoshangabad</h3>
-                            <h4>Schooling 6th - 12th</h4>
+        <section class="skill-section">
+            <div class="skill-content">
+                <div class="lang">
+                    <div class="lang">
+                        <div class="header">
+                            <h4>Programming Language</h4>
                         </div>
-                        <div class="col">
-                        </div>
-                        <div class="col">  
-                            <h6> <i>July 2006 - April 2013</i> </h6>
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-3">
+                                    <i class="devicon-c-line-wordmark colored icon">C</i>
+                                </div>
+                                <div class="col-3">
+                                    <i class="devicon-cplusplus-plain colored icon">C++</i>
+                                </div>
+                                <div class="col-6">
+                                    <i class="devicon-css3-plain colored icon">CSS</i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <i class="devicon-html5-plain colored icon">Html</i>
+                                </div>
+                                <div class="col-3">
+                                    <i class="devicon-javascript-plain colored icon">JavaScript</i> 
+                                </div>
+                                <div class="col-6">
+                                    <i class="devicon-vuejs-plain icon" style="color:white">Vue</i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <i class="devicon-django-plain colored icon" style="color:rgb(189, 213, 235);">Django</i>
+                                </div>
+                                <div class="col-3">
+                                    <i class="devicon-python-plain icon" style="color:rgb(147, 187, 145);">Python</i>
+                                </div>
+                                <div class="col-6">
+                                    <i class="devicon-nodejs-plain-wordmark icon" style="color:rgb(119, 199, 231);">Node.js</i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <i class="devicon-java-plain colored icon" style="color:rgb(228, 101, 160);">Java</i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="grad">
-                    <div class="row">
-                        <div class="col">
-                            <h3>IIIT, Allahabad</h3>
-                            <h4>Bachelor of Technology</h4>
-                            <br>
-                            <div class="desc">
-                                <h6>Information Technology</h6>
-                                <h6>CGPA : 7.94</h6>
-                            </div>
-                        </div>
-                        <div class="col">
-                        </div>
-                        <div class="col">  
-                            <h6> <i>July 2014 - may 2019</i> </h6>
-                        </div>
+                <div class="lang">
+                    <div class="header">
+                        <h4>Tools</h4>
+                    </div>
+                    <div class="content">
+                        <i class="devicon-git-plain colored icon">Git</i>
                     </div>
                 </div>
-                <div class="postgrad">
-                    <div class="row">
-                        <div class="col">
-                            <h3>IIIT, Allahabad</h3>
-                            <h4>Master of Technology</h4>
-                            <br>
-                            <div class="desc">
-                                <h6>Information Technology</h6>
-                                <h6>CGPA : 7.94</h6>
+                <div class="lang">
+                    <div class="header">
+                        <h4>Databases</h4>
+                    </div>
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-3">
+                                <i class="devicon-mongodb-plain colored icon">Mongodb</i>
                             </div>
-                        </div>
-                        <div class="col">
-                        </div>
-                        <div class="col">  
-                            <h6> <i>July 2014 - May 2019</i> </h6>
+                            <div class="col-9">
+                                <i class="devicon-mysql-plain colored icon">MySQl</i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -66,17 +84,23 @@ export default {
 </script>
 
 <style scoped>
+.lang{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 #skills{
     height: 100vh;
 }
-.resume-section{
+.skill-section{
     display: block;
     margin-top: 20%;
     margin-bottom: 20%;
 }
-.resume-item{
-    padding-top: 10px;
-    padding-bottom: 20px;
+.icon{
+    font-size: 1.5rem;
+}
+.skill-content{
+    padding-bottom: 10px;
 }
 h1, h6{
     font-family: 'Courier New', Courier, monospace;
@@ -100,14 +124,18 @@ h4{
 .row{
     padding-bottom: 30px;
 }
-.grad{
-    padding-bottom: 30px;
-}
-.postgrad{
-    padding-bottom: 30px;
-}
-.resume-section {
+.skill-section {
     padding-top: 12rem!important;
     padding-bottom: 12rem!important;
+}
+.content{
+    display: block;
+}
+.content i{
+    padding: 20px;
+}
+i{
+    height: 20%;
+    width: 20%;
 }
 </style>

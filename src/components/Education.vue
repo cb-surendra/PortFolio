@@ -1,23 +1,7 @@
 <template>
     <div id="education">
         <section class="resume-section">
-            <div class="resume-item-head">
-                <h1>Education</h1>
-            </div>
             <div class="resume-item">
-                <div class="schooling">
-                    <div class="row">
-                        <div class="col">
-                            <h3>JNV Hoshangabad</h3>
-                            <h4>Schooling 6th - 12th</h4>
-                        </div>
-                        <div class="col">
-                        </div>
-                        <div class="col">  
-                            <h6> <i>July 2006 - April 2013</i> </h6>
-                        </div>
-                    </div>
-                </div>
                 <div class="grad">
                     <div class="row">
                         <div class="col">
@@ -109,5 +93,8 @@ h4{
 .resume-section {
     padding-top: 12rem!important;
     padding-bottom: 12rem!important;
+}
+.col{
+    color: whitesmoke;
 }
 </style>

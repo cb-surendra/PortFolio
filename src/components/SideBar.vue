@@ -4,11 +4,9 @@
             <div class="dp">
                 <img src='../assets/profile.png'>
             </div>
-            <a href="#about">ABOUT</a>
-            <a href="#experience"> <strong> EXPERIENCE </strong> </a>
-            <a href="#education"> <strong> EDUCATION </strong> </a>
-            <a href="#skills"> <strong> SKILLS </strong> </a>
-            <a href="#interests"> <strong> INTERESTS </strong> </a>
+            <a href="#about"> <strong> ABOUT </strong></a>
+            <a href="#education"> <strong> EDUCATION <br> & EXPERIENCE</strong> </a>
+            <a href="#skills"> <strong> SKILLS <br> & INTERESTS</strong> </a>
             <a href="#contacts"> <strong> CONTACTS </strong> </a>
             </div>
     </div>
@@ -35,7 +33,7 @@ export default {
     left: 0px;
     top: 0px;
     padding-top: 5%;
-    padding-left:5%;
+    padding-left: 5%;
     padding-right: 5%;
     overflow: hidden;
 }
@@ -50,7 +48,7 @@ export default {
 }
 .sidebar-content a:hover{
     color: #ff8a80;
-    font-size: 160%;
+    font-size: 150%;
 }
 img{
    height: 200px;
@@ -59,5 +57,6 @@ img{
    border-radius: 50%;
    border: 6px solid white;
    margin-bottom: 20%;
+   margin-top: 10%;
 }
 </style>
